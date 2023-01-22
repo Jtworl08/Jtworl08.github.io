@@ -1,0 +1,91 @@
+<html>
+<meta name="viewport" content="widht-device-width, initial-scale-1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<img src="bg.jpg" style="width:100%">
+<style>
+img{width:300px;height:300px;}
+body { background-color: #FFB6C1; }
+</style>
+</body>
+
+<div class=" w3- bar w3-container w3-white">
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Profile')">Profile</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Blackpink')">Blackpink</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'BornPink')">Born Pink</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Foto')">Foto</button>
+</div>
+
+<div id="Profile" class="w3-container city w3-animate-fading" style="display:none">
+	<center>
+<div class="w3-panel w3-white w3-card-4">
+<h2> PROFILE </h2>
+<hr>
+<img src="UN.jpg">
+<p>
+ <br>NAMA: HANNA SEPTIANI
+ <br>KELAS: IF 3
+ <br>NIM: 10122079
+ <br> TEKNIK INFORMATIKA
+</div>
+ </div></center>
+
+
+ <div id="Blackpink" class="w3-container city w3-animate-bottom" style="display: ;:none">
+ 	<center>
+ <div class="w3-panel w3-black w3-card-4">
+ <h2>BLɅƆKPIИK</h2>
+ <img src="177.jpg">
+ <hr>
+ <p>BLɅƆKPIИK adalah grup vokal wanita asal Korea Selatan. Blackpink dibentuk oleh YG Entertainment dengan beranggotakan empat orang, diantaranya Jennie, Jisoo, Lisa, dan Rosé.
+
+Blackpink merupakan grup vokal wanita Korea yang memiliki lagu dengan posisi tertinggi di Billboard Hot 100, berada di nomor 55 dengan "Ddu-Du Ddu-Du", dan di Billboard 200, berada di nomor 40 dengan EP berjudul Square Up. Blackpink merupakan grup pop Korea perempuan pertama dan satu-satunya yang memasuki dan memuncaki Emerging Artists Billboard. Mereka juga merupakan grup pop Korea wanita pertama yang mempunyai empat lagu di Billboard World Digital Song Sales. Di waktu yang sama saat rilis, "Ddu-Du Ddu-Du" memecahkan rekor sebagai video musik Korea yang paling banyak ditonton di YouTube dalam waktu 24 jam, sebelum dilewati oleh BTS dengan video musik mereka yang bertajuk "Idol".
+</div>
+</p></center></div>
+
+
+ <div id="BornPink" class="w3-container city w3-animate-top" style="display:none">
+ 	<center>
+ <div class="w3-panel w3-black w3-card-4">
+ <h2>BORN PINK</h2>
+ <img src="born.jpg">
+ <hr>
+ <p>Born Pink adalah album studio Blackpink yang dirilis oleh YG Entertainment dan Interscope Records pada 16 September 2022.</p>
+ </div> </div></center>
+
+<div id="Foto" class="w3-container city w3-animate-zoom" style="display:none">
+ 	<center>
+<div class="w3-panel w3-black w3-card-4">
+<h2>FOTO BLɅƆKPIИK</h2>
+<hr>
+<div class="w3-panel w3-white w3-card-4">
+<img src="HI.jpg">
+</div>
+<p>
+<div class="w3-panel w3-white w3-card-4">
+<img src="HU.jpg">
+</div>
+<p>
+<div class="w3-panel w3-white w3-card-4">
+<img src="KO.jpg">
+<hr>
+ 
+<script>
+function openCity(evt, cityName) {
+ var i, x, tablinks;
+ x = document.getElementsByClassName("city");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+ tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+ }
+ document.getElementById(cityName).style.display = "block";
+ evt.currentTarget.className += " w3-green";
+}
+</script>
+</body>
+</html>
+
